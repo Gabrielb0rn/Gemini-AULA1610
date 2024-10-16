@@ -7,7 +7,7 @@ async function run() {
   // The Gemini 1.5 models are versatile and work with both text-only and multimodal prompts
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
 
-  const prompt = "Conte uma piada, SEM TOMATES!"
+  const prompt = "Fale sobre o nome, Maria"
 
   const result = await model.generateContent(prompt);
   const response = await result.response;
